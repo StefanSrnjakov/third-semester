@@ -1,0 +1,80 @@
+Edge preserving filtering
+
+Slika so sum kako da gi odstranime sumovite
+Da gi detektirame rabovite 
+Tesko e da se najde rab na krzznicca treba da koristime usmereni rabovite
+treba da iame 7 filtri za rabovi i 1 za glajenje
+
+
+1. 7 filtri ni trebat za da sekoj smer da najdime rabovi
+
+2. Ke treba so machine learning da pravime model !!!!!?
+
+3. Model so 2 glavi
+      - 2 glavi
+      - leva i desna strana
+      - nalevata granka 8 filtri velikost 11x11
+      - eden filter diagolamlni eden horizontalni eden vertikalni, kontra diagolni i edna tocka (povprecenje)
+      - Ma desnata granka ke ucime kako da se aplicirat filtrite so gi napravime u levata granka
+      - treba da mu davame utezitev na filtrite kolku se bitni (znaci aktivacijata na filtrite)
+      - desnata strana ke ima 3 resnet blocki povezani navzdol 
+      - input ke bide 256x256x3 RGB na levata strana na modelot
+      - Ke davame loceno R G B ama u isti konvolucijski sloj (so e konvolucija)
+      - Na desnata strana ke davame 3 kanalkna barvna slika 
+      - ke bidat input na prv 3 output 32, ostanatite 2 ke imat i input i output 32
+      - ke iame problem 32 kanali za toa treba da napravime da bidat 8
+      - so toa i 2te granki ke imat po 8 kanali 
+      - znaci dobivame 256x256x8x3
+4. Najvec tezav je kako aplicirat filtre na slike i kako utezite da gi stavime i kako optezenite sliki da se vratat nazad u rgb
+
+5. Res net block e 
+  - convolucija
+  - BN
+  - Relu
+  - convolucija
+  - BN
+  - sestavanje
+  - Relu
+  Na vhodot davas slika so teze skozi konvucinske sloji, is prve tocki pristejemo vhodnata slika sestevanje sloj 
+  - tuka ima eden problem
+  - ako imame 3 kanali kre imame output 32 kanali, ke treba reshape konvolucija 
+  - resnet blokite moze da bidat nogu kompleksno definirani
+  - ne baraj kako se definirat za sam da definiras oti nogu ke se maltreiras
+  - treba samo da razbiram zosto i kako rabote seta
+  - nema potreba da a zgolemujme slikata oti nogu ke jade graficka
+
+  aplikativni i multiplikativni sum razlika
+  (edniot e pristet na slikata a drugiot se mnozi so slikata)
+  (morame so povekje std deviacii da ucime oti sekoa godina nekoj toa ne go slusa i treba na 3 razlicni nivoa da go ucime so pojak i poslab sum)
+
+pazite na antialiazing da ne e rabot sokrsen
+
+Dimenzija za rezidual to a e povezavata preku modelot so ode
+
+treba da razmisluvam i za optimizator i za loss funkcija
+tuka se rabote za regresija
+site dimenzii na modelot treba da znam sekoj parametar zosto i kako
+recursive ne e rekurzija samo zaradi toa so so 3 sloja r g b go vikame 
+
+1000 epoch
+a filtrite se na 100 000 epoch 
+sekoa epoha nova slika generirame
+zosto ne slika za sekoa epoha
+
+
+ne smee da pokvare originalna slika
+
+
+ako ima crni rab okolu slikata, toa znaci deka e nogu malce uceno
+
+
+
+3 minuti go ostavame da se trenira, ako ne go biva probujme nanovo, ako go biva mu stavame povekje epohi
+
+1. kako da generirame sliki so rabovi za ucenje
+2. kako da generirame sum
+3. kaji da izgradam model so 2 granki
+4. da napravam resnet bloki
+5. kako da detektiram rabovi
+6. kako da odstranam sum
+
