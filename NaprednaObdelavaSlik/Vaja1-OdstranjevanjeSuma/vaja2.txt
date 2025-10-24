@@ -1,0 +1,7 @@
+Pojacaj locljivost
+1000 slike na epoha
+
+ucime na velikost 256x256
+numpy ne uporablajaj za shranevanje slik 
+
+predobdelavata e pobitna od modelot.

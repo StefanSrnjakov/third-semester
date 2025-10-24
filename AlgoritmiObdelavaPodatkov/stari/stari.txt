@@ -1,0 +1,10 @@
+Naštej tipe ločljivosti, ki jih definiramo ob zajemu georefernciranih slik?
+Kaj je geografski datum
+Kdar izvajamo klasifikacijo pikslov neposredno s primerjavo njihovih spektralnih predpisov, pri temu običjajno uporabljamo kotno in ne evklitsko razdaljo. Zakaj?
+Kakšna je razlika med pasivnimi in aktivnimi senzorskimi sistemi?
+imaš sliko izračunaj za en kvadratek. morfološko  krčenje, morfološko širjanjje, morfološko odpiranje, morfološko zapiranje ter seveda belo cilindrično transforacijo
+razloži lastnostt idempotententnosti morfoloških operatorjev
+kaj je črna cilidrična transformacija
+s skico razloži pomen vektorja odziva v primeru morfološke dekompozicije
+za neko sliko izračunaj matriko sopojavitve sivinskih vrednosti pri odmiku P(0,1)
+10 .GAP FILL: Obdelava slik, ki temelji na objektih, v koraku PREDOBDELAVE vključuje SEGMENTACIJO medtem ko obdelava slik, ki temelji na pikslih ,tega ne.
