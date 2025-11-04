@@ -94,6 +94,7 @@ temp/
 outputs/
 results/
 inference_outputs/
+*coco_images*
 
 # Large image files (optional - uncomment if you want to exclude all images)
 # *.png

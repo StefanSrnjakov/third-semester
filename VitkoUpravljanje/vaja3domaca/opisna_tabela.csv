@@ -1,0 +1,12 @@
+Spremenljivka,Opisna statistika,Min - Max,Enota,Normalnost (p)
+Trajanje _h,0.11 (0.00–0.33),0.00 – 2.83,h,5.123e-15
+Cakanje _h,0.04 (0.00–0.46),0.00 – 5.20,h,8.124e-17
+Napake ,0.00 (0.00–0.00),0.00 – 1.00,št.,2.338e-22
+Tip aktivnosti (VA/NVA): NVA,50 (45.5%),,,
+Tip aktivnosti (VA/NVA): VA,40 (36.4%),,,
+Tip aktivnosti (VA/NVA): NNVA,20 (18.2%),,,
+Vloga (kdo): Raziskovalec,70 (63.6%),,,
+Vloga (kdo): Vodja laboratorija,10 (9.1%),,,
+Vloga (kdo): Raziskovalec / tiskalnik,10 (9.1%),,,
+Vloga (kdo): —,10 (9.1%),,,
+Vloga (kdo): Kontrolor kakovosti,10 (9.1%),,,

@@ -1,0 +1,111 @@
+Iteracija,Korak,Vloga (kdo),Trajanje (h),Cakanje (h),Tip aktivnosti (VA/NVA),Napake (st)
+1,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+1,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+1,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+1,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+1,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+1,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+1,Hlajenje modela,—,0.0,0.5,NNVA,0
+1,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+1,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+1,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+1,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+2,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+2,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+2,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+2,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+2,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+2,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+2,Hlajenje modela,—,0.0,0.5,NNVA,0
+2,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+2,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+2,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+2,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+3,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+3,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+3,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+3,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+3,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+3,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+3,Hlajenje modela,—,0.0,0.5,NNVA,0
+3,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+3,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+3,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+3,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+4,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+4,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+4,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+4,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+4,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+4,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+4,Hlajenje modela,—,0.0,0.5,NNVA,0
+4,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+4,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+4,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+4,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+5,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+5,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+5,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+5,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+5,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+5,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+5,Hlajenje modela,—,0.0,0.5,NNVA,0
+5,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+5,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,1
+5,Ponoven tisk (če napaka),Raziskovalec,2.0,0.0,NVA,1
+5,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+6,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+6,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+6,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+6,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+6,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+6,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+6,Hlajenje modela,—,0.0,0.5,NNVA,0
+6,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+6,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+6,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+6,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+7,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+7,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+7,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+7,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+7,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+7,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+7,Hlajenje modela,—,0.0,0.5,NNVA,0
+7,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+7,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+7,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+7,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+8,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+8,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+8,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+8,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+8,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+8,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+8,Hlajenje modela,—,0.0,0.5,NNVA,0
+8,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+8,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+8,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+8,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+9,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+9,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+9,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+9,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+9,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+9,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+9,Hlajenje modela,—,0.0,0.5,NNVA,0
+9,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+9,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,1
+9,Ponoven tisk (če napaka),Raziskovalec,2.0,0.0,NVA,1
+9,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
+10,Priprava 3D modela implantata,Raziskovalec,1.0,0.0,VA,0
+10,Pošiljanje modela v pregled,Raziskovalec,0.03,0.0,NVA,0
+10,Čakanje na odobritev,Vodja laboratorija,0.0,3.0,NVA,0
+10,Priprava tiskalnika in materiala,Raziskovalec,0.25,0.0,VA,0
+10,Čakanje na prost tiskalnik,Raziskovalec,0.0,1.0,NVA,0
+10,3D tisk,Raziskovalec / tiskalnik,2.0,0.0,VA,0
+10,Hlajenje modela,—,0.0,0.5,NNVA,0
+10,Odstranjevanje podpornih struktur,Raziskovalec,0.33,0.0,VA,0
+10,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.17,NNVA,0
+10,Ponoven tisk (če napaka),Raziskovalec,0.0,0.0,NVA,0
+10,Označevanje in vpis v dokumentacijo,Raziskovalec,0.08,0.0,NVA,0
