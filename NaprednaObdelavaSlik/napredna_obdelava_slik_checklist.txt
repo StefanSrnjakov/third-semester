@@ -1,0 +1,427 @@
+Napredna obdelava slik – CHECKLIST
+
+SPLOŠNO
+- Predvideni študijski rezultati (cilji, znanje in razumevanje)
+- Načini ocenjevanja (lab vaje, pisni izpit, točke, pogoji)
+- Vsebina predmeta (CNN, zajemanje slik, predobdelava, segmentacija, transformacije)
+- Osnovna literatura in dodatna literatura
+
+1. KONVOLUCIJSKE NEVRONSKE MREŽE
+
+  * Umetni nevron in umetne nevronske mreže
+      - Biološki nevron vs. umetni nevron
+      - Vhodni vektor x, uteži w, bias b
+      - Obtežen vhod: skalarni produkt wx + b
+      - Aktivacijska funkcija f(s), izhod y = f(s)
+      - Topologija nevronske mreže (plasti, fully-connected, feedforward)
+      - Funkcijska aproksimacija f: X -> Y
+      - Kapaciteta modela, število parametrov
+      - Plitke vs. globoke nevronske mreže
+
+      Aktivacijske funkcije
+      - ReLU
+      - Leaky ReLU
+      - Maxout
+      - Sigmoid
+      - tanh
+      - Nasičenje, problem izginjajočih gradientov
+
+      Učenje nevronske mreže
+      - Nadzorovano učenje (supervised learning)
+      - Učna množica UM: (x_i, t(x_i))
+      - Forward pass (prehajanje naprej)
+      - Izguba (loss) L(x, y, t, w)
+      - Stroškovna funkcija J(w), matematično upanje E
+      - Backpropagation (vzvratno razširjanje)
+      - Gradient ∇_w J(w)
+      - Posodabljanje uteži
+
+      Stroškovne funkcije
+      - Cross-entropy (navzkrižna entropija, negativna log-verjetnost)
+      - MSE (Mean Squared Error)
+      - MAE (Mean Absolute Error)
+      - Težave MSE/MAE pri gradientni optimizaciji
+
+      Učni algoritmi (optimizatorji)
+      - Stohastični gradientni sestop (SGD)
+      - Momentum
+      - AdaGrad
+      - RMSProp
+      - Adam
+      - Algoritmi 2. reda (Newton, konjugirani gradienti)
+
+  * Konvolucijske nevronske mreže (CNN)
+      - Grid-like podatki (časovne serije, slike)
+      - Konvolucija vs. križna korelacija
+      - Redke interakcije (sparse connectivity)
+      - Deljenje parametrov (parameter sharing)
+      - Ekvivariantnost na translacijo
+      - Omejitve: ne-ekvivariantnost na rotacijo in skalo
+
+      Konvolucijska plast
+      - Jedro / filter F×F×Ch
+      - Stride S
+      - Zero-padding P
+      - Dimenzije izhoda M2, N2
+      - Število filtrov K
+      - Hiperparametri: F, S, P, K
+      - Nizko-, srednje-, visoko-nivojske značilnice
+
+      Plast detekcije / aktivacijska plast
+      - Uporaba aktivacijske funkcije (ReLU, ipd.) na vsak element
+
+      Združevalna plast (pooling)
+      - Max pooling
+      - Average pooling
+      - L2 pooling
+      - F, S za pooling (npr. F=2, S=2)
+      - Invariantnost na majhne translacije
+      - Podvzorčenje, podprileganje / nadprileganje
+
+      Polno povezana plast
+      - Transformacija fully-connected v konvolucijsko plast
+
+      Arhitekture CNN
+      - LeNet
+      - AlexNet
+      - ZFNet
+      - VGGNet
+      - GoogLeNet (Inception)
+      - ResNet (residual blocks, skip connections)
+      - DenseNet (goste povezave med plastmi)
+      - Število parametrov, globina mreže
+
+  * Inženirski pristop h globokim NN
+      - Cilji, metrike napake, ciljne vrednosti
+      - Metrike: izguba, accuracy, precision, recall, PR-krivulja, F-score, coverage
+      - End-to-end pipeline
+      - Diagnostika: podprileganje, nadprileganje
+      - Inkrementalne izboljšave
+
+      Predobdelava podatkov
+      - Ničelno povprečje
+      - Normalizacija (deljenje s standardnim odklonom)
+      - PCA, redukcija dimenzije
+      - Beljenje
+      - Izračun statistik samo na učni množici
+
+      Inicializacija uteži
+      - Problem simetrije (vse uteži = 0)
+      - Naključna inicializacija (N(0,1))
+      - Kalibracija variance: 1/√n, √2/n (He, Xavier)
+      - Redka inicializacija
+
+      Inicializacija pragov
+      - Bias = 0
+
+      Batch normalization
+      - Normalizacija mini-batchov
+      - Parametra γ in β
+      - Povprečje μ_B, standardni odklon σ_B
+      - Razlika med fazo učenja in fazo inferenciranja
+
+      Regularizacija
+      - L2 regularizacija (weight decay, Tikhonov)
+      - L1 regularizacija (sparseness)
+      - Dropout (verjetnost p)
+      - Dataset augmentation (rotacije, skaliranje, svetlost, blur)
+      - Zgodnja prekinitev (early stopping)
+
+      Izbira hiperparametrov
+      - Velikost modela (št. skritih enot, velikost filtrov)
+      - Stopnja učenja
+      - Ničelna obroba
+      - Koeficient razkroja uteži
+      - Stopnja drop-outa
+
+      Avtomatsko iskanje hiperparametrov
+      - Grid search
+      - Random search
+      - Grobo-fini pristop
+      - Evolucijski algoritmi
+
+      Privzeti izhodiščni modeli
+      - Baseline modeli za slike (preprost CNN)
+      - Baseline modeli za vektorje (MLP)
+      - ReLU, SGD+moment, early stopping, dropout
+
+      Spremljanje učenja in razhroščevanje
+      - Spremljanje izgube skozi epohe
+      - Spremljanje natančnosti na učni in validacijski množici
+      - Razlika train/val (overfitting, underfitting)
+      - Norma spremembe uteži / norma uteži
+      - Porazdelitev aktivacij in gradientov
+      - Vizualizacija filtrov prve plasti CNN
+      - Vizualizacija rezultatov (primeri, kjer se model moti)
+
+  * Aplikacije CNN
+      - Segmentacija slik
+      - Image retrieval
+      - Razvrščanje slik (classification)
+      - Detekcija in lokalizacija objektov
+      - Učenje značilnic (feature learning)
+
+2. NAPREDNI KONCEPTI ZAJEMANJA SLIK
+
+      Zajemanje slik s kamerami CCD
+      - CCD senzorji
+      - Osnovno delovanje
+
+      Hiperspektralno zajemanje
+      - Hiperspektralne slike
+      - Imaging spectrometers
+      - Spektroskopija
+      - Daljinsko slikanje (remote sensing)
+      - Elektromagnetno sevanje, valovna dolžina
+      - Multispektralno vs. hiperspektralno zajemanje
+      - Ozki pasovi valovnih dolžin
+      - Spekter koeficienta odbojnosti (reflectance)
+      - Spekter koeficienta absorpcije
+      - Edinstvenost spektralnih podpisov materialov
+      - Spektralne knjižnice (ASTER, USGS)
+      - Airborne in spaceborne senzorji (AVIRIS, AISA, DAIS, PRISM, PROBA, NEMO)
+      - Višina zajema, ground swath, ločljivost
+      - Hiperspektralna kocka (x, y, λ)
+      - Analiza hiperspektralnih slik
+        - Spektralna podobnost
+        - Ciljni spekter (target spectrum)
+
+      Metode analiziranja hiperspektralnih slik
+      - Metode celega piksla
+        - Najmanjša razdalja
+        - Največja verjetnost
+        - Spectral Angle Mapper (SAM)
+        - Prileganje spektralnih značilnic
+      - Podpikselne metode (sub-pixel)
+        - Linearno spektralno razmešanje (linear unmixing)
+        - Endmembers (končni člani)
+        - Uteži in ploščine znotraj piksla
+        - Slika vsebnosti (abundance image)
+        - Delno razmešanje
+
+      Hiperspektralne aplikacije
+      - Geologija (minerali, lastnosti tal)
+      - Vegetacija (identifikacija vrst)
+      - Vojska (detekcija vozil, maskiranih objektov)
+      - Medicinski primer: podkožne vene, NIR
+
+      Polarizirano zajemanje
+      - Polarizacija svetlobe
+      - Valovna dolžina, amplituda, smer vibriranja
+      - Linearna polarizacija
+      - Krožna polarizacija (leva, desna)
+      - Stokesov vektor (s0, s1, s2, s3)
+      - Naravni primeri polarizacije (čebele, žuželke, ligenj)
+      - Imaging polarimeters
+        - Time-sequential
+        - Amplitude-splitting
+        - Wavefront-splitting
+      - Polarimetri na osnovi delitve fronte valovanja
+      - Koncept podobnosti z Bayerjevim filtrom
+      - Interpolacija in registracija polarizacijskih stanj
+      - Primer kamere PI-100 (ločljivost, fps, spektralno območje)
+      - Primeri polarizacijskih slik (škrob, struktura)
+      - Aplikacije polarizirane slike:
+        - Detekcija defektov
+        - Pogled v vodo (oljni madeži)
+        - Detekcija umetnih objektov
+        - Odstranjevanje bleščanja
+
+      Interferometrija
+      - Svetlobni vir, elektromagnetno valovanje
+      - Bela svetloba, monokromatska svetloba
+      - Koherentnost (coherent source)
+      - Laserska svetloba
+      - Interferenca (superpozicija valovanj)
+      - Konstruktivna interferenca
+      - Destruktivna interferenca
+      - Interferometer
+        - Michelsonov interferometer
+        - Beam-splitter
+        - Referenčni žarek
+        - Testni žarek
+        - Razlika poti
+      - Interferogram
+        - Interference fringes (resice)
+        - Ravni pasovi, krožni pasovi
+        - Odvisnost od razlike poti in geometrije
+      - Natančnost merjenja (μm)
+      - Oblike interferogramov:
+        - Ravninska valovna fronta
+        - Sferična vs. ravninska fronta
+      - Aplikacije interferometrije:
+        - Radarska interferometrija
+        - Interferometrični mikroskopi
+        - Pegasta interferometrija (vitalni znaki, optična vlakna)
+
+3. NAPREDNA PREDOBDELAVA SLIK
+
+      Odstranjevanje pegastega šuma
+      - Noise removal / reduction
+      - Artefakti filtriranja, blur
+      - Šum neodvisen od signala
+      - Šum odvisen od signala
+
+      Modeli šuma
+      - Aditivni model: I(p) = X(p) + N(p)
+      - Multiplikativni model: I(p) = X(p) N(p)
+      - Predpostavke o šumu: μ_N = 0, varianca σ_N^2, bel / Gaussov šum
+
+      Statistične mere
+      - MSE
+      - RMSE
+      - PSNR
+      - SNR (σ_I, σ_X, μ_I)
+      - S/MSE
+      - ENL (equivalent number of looks)
+
+      Pegasti šum (speckle noise)
+      - Multiplikativen šum
+      - Interferenca razsipane energije
+      - Koherentno slikanje (ultrazvok, SAR)
+      - Zrnat izgled slike
+      - Razsipovalci (scatterers), razdalje in faze
+      - Destruktivna / konstruktivna interferenca
+      - Odvisnost od hrapavosti površine
+      - Lokalna svetlost in ehogeničnost
+
+      Cilji filtrov pegastega šuma
+      - Izboljšanje SNR
+      - Ohranitev robov in linij
+
+      Metode zmanjšanja pegastega šuma
+      - Adaptivni mediani filter
+        - Dve maski (H1, H2)
+        - Prag T
+      - Kuanov filter
+        - MMSE
+        - Unit-mean noise
+        - Varianca signala σ_X^2
+      - Leejev filter (MMSE)
+      - Gama filter (MAP)
+        - Gama porazdelitev
+        - K porazdelitev
+        - Parameter α
+      - Frostov filter
+        - Adaptivni Wienerjev filter
+        - Exponential impulse response h
+        - K, C_I, razdalja od središča okna
+      - Oddyjev filter
+        - Nizko sito
+        - Adaptivno okno 3×3
+        - Maska W_kl
+        - Parameter α
+      - Filter AFS (adaptive filter on surfaces)
+        - Local emerging surface (l.e.s.)
+        - Ploščina grafne ploskve
+        - 5×5 maske, izbor minimalne l.e.s.
+      - Wavelet-based denoising
+      - Nevronske mreže za odstranjevanje šuma
+        - MLP s K×L vhodi, 1 izhodom
+
+      Barvna vztrajnost (colour constancy)
+      - Barvna kalibracija
+      - Perceptualna barvna vztrajnost pri ljudeh in živalih
+      - Uniformna vs. neuniformna osvetlitev
+      - Več virov svetlobe, sence
+      - Počasi spreminjajoča se osvetlitev vs. hiter geometrijski/odbojni del
+
+      Model formiranja barvnih vrednosti
+      - Spektralni odziv S_v(λ)
+      - Osvetlitev L(λ, p)
+      - Odbojnost R(λ, p)
+      - Geometrijski faktor G(p)
+      - C_v(p) = ∫ S_v(λ) E(λ,p) dλ
+      - Poenostavljen model Lambert, λ_v
+      - C_v(p) = G(p) R_v(p) L_v(p)
+
+      Algoritmi za barvno vztrajnost (uniformna osvetlitev)
+      - White Patch Retinex (WPR)
+        - Bela površina, maksimalna vrednost
+        - L = max(C(p))
+        - O(p) = C(p)/L
+      - Gray World Assumption (GWA)
+        - Povprečna barva v sliki
+        - O(p) = C(p) / (ȳ_C^φ)
+        - Faktor povečave φ
+
+      Algoritmi za barvno vztrajnost (neuniformna osvetlitev)
+      - CCN (comprehensive colour normalization)
+        - Barvno normiranje
+        - O′(p) = C(p)/(C_R + C_G + C_B)
+        - GWA skaliranje
+        - Iterativna shema, konvergenca
+      - LSAC (local space average colour)
+        - Počasi spreminjajoča osvetlitev
+        - Lokalno povprečje ¯C(p) = C*K
+        - 2D nizek filter (Gauss, eksponent)
+        - Parametra a, ρ (dimenzija slike)
+      - RSR (random spray retinex)
+        - Bele površine, spreji pikslov
+        - Radij r, število sprejev P, velikost K
+        - O(p) = 1/P Σ C(p)/max_k C(p_p,k)
+
+      Barvni kalibratorji
+      - Colour checker
+      - GretagMacbeth / X-Rite
+        - Naravne barve
+        - RGB + CMY barve
+        - Sivinska lestvica
+      - QP201
+      - Uporaba pri ocenjevanju algoritmov barvne vztrajnosti
+      - Merjenje uspešnosti (MSE, RMSE, itd.)
+
+4. NAPREDNA SEGMENTACIJA
+
+      Modeli aktivnih kontur – kače (snakes)
+      - Deformable spline
+      - Minimization of energy
+      - Interne sile (gladkost, kontinuirnost)
+      - Slikovne sile (robovi, linije, zaključi)
+      - Zunanje sile (omejitve, user input)
+      - Parametrična predstavitev v(s) = [x(s), y(s)]
+
+      Energijski funkcional kače
+      - Esnake = ∫ (E_int + E_image + E_con) ds
+      - Interna energija
+        - E_int = 1/2 (α|v_s|^2 + β|v_ss|^2)
+        - Membranski člen (prvi odvod)
+        - Thin-plate člen (drugi odvod)
+        - Parametra α(s), β(s)
+      - Slikovna energija
+        - E_image = w_line E_line + w_edge E_edge + w_term E_term
+        - E_line = I(x,y)
+        - E_edge = -|∇I|^2
+        - E_term (curvature v nivojskih setih)
+        - Gaussovo glajenje C(x,y) = G_σ * I
+
+      Numerična rešitev kač
+      - Diskretizacija krivulje (n vozlišč)
+      - Diskretizacija energije
+      - Matrika A (pentadiagonalna, n×n)
+      - Parametri a, b, c v matriki A
+      - Zunanje sile F_x, F_y
+      - Eulerjev korak
+      - Iterativni posodobitveni zakon:
+        - x_t = (A + γI)^(-1) (γx_(t-1) - F_x)
+        - y_t = (A + γI)^(-1) (γy_(t-1) - F_y)
+      - Konvergenčni pogoji
+      - Ponovna enakomerna razporeditev vozlišč
+
+      Problemi in parametri kač
+      - Inicializacija začetne krivulje
+      - Vpliv parametrov α, β, w_line, w_edge, w_term
+      - Primeri dobrih in slabih segmentacij
+      - Število iteracij, stopnja koraka γ
+
+      Razširjene kače in aplikacije
+      - GVF (Gradient Vector Flow snakes)
+      - Balloon snakes
+      - Diffusion snakes
+      - Sledenje objektom v video sekvencah
+      - Stereo ujemanje (Estereo)
+
+      Analiza neodvisnih komponent (ICA) – segmentacija
+      - Osnovni pojem ICA
+      - Uporaba za ločevanje komponent v slikah
+      - Uporaba pri segmentaciji

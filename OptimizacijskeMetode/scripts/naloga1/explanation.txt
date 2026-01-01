@@ -1,0 +1,40 @@
+Resitev: 
+n = 3
+najboljsa tocka x*:
+    3.0430    1.4829    0.1662
+
+vrednost f(x*): 0.515785
+
+
+n = 5
+najboljsa tocka x*:
+    3.1000    1.5428    0.2341    2.9218    0.2293
+
+vrednost f(x*): 0.528444
+
+
+n = 10
+najboljsa tocka x*:
+
+    3.1257    3.1100    3.0943    3.0787    3.0631    3.0474    3.0317    3.0159    2.9999 1.4893
+
+vrednost f(x*): 0.422473
+
+
+
+
+Za reševanje naloge sem uporabil MATLAB funkcijo
+fmincon(fun, x0, A, b, Aeq, beq, lb, ub, nonlcon).
+V mojem primeru:
+
+fun = @(x) -funkcija_f(x) – minimiziram negacijo funkcije f (iščem maksimum)
+
+x0 – naključna začetna točka v območju [0, 10]^n
+
+A, b, Aeq, beq – prazne matrike ([]), ker nimam linearnih omejitev
+
+lb – spodnje meje 0
+
+ub – zgornje meje 10
+
+nonlcon = @omejitve – nelinearne omejitve za produkt in vsoto

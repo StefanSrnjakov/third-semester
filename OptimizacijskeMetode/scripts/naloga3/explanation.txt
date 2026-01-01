@@ -1,0 +1,50 @@
+Pri reševanju naloge nisem uspel pravilno prebrati podatkov iz datoteke grafi3.mat. 
+
+Čeprav se spremenljivke ob nalaganju pojavijo v delovnem prostoru, sem zaradi napačnega ravnanja 
+    z objektom tipa graph dobival nepričakovane rezultate in napake pri klicu funkcij. 
+    
+Kljub implementaciji potrebnih funkcij program ni deloval pravilno, 
+saj vhodni grafi niso bili pravilno interpretirani.
+
+
+
+
+Funkcije: 
+Uporabil sem funkcijo intlinprog, ki rešuje celoštevilske linearne programe z danimi omejitvami in mejnimi pogoji.
+
+
+Nefunkcionalna resitev: 
+
+
+
+
+Test za C7x7:
+Model has either no columns or no rows, so ignoring user constraint matrix data and initialising empty matrix
+Coefficient ranges:
+  Cost   [1e+00, 1e+00]
+  Bound  [1e+00, 1e+00]
+Presolving model
+0 rows, 0 cols, 0 nonzeros  0s
+0 rows, 0 cols, 0 nonzeros  0s
+Presolve: Optimal
+
+Solving report
+  Status            Optimal
+  Primal bound      -1
+  Dual bound        -1
+  Gap               0% (tolerance: 0.01%)
+  Solution status   feasible
+                    -1 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00 (total)
+                    0.00 (presolve)
+                    0.00 (postsolve)
+  Nodes             0
+  LP iterations     0 (total)
+                    0 (strong br.)
+                    0 (separation)
+                    0 (heuristics)
+
+Optimal solution found.

@@ -103,3 +103,8 @@ inference_outputs/
 # *.gif
 # *.bmp
 # *.tiff
+*checkpoints*
+*node_modules*
+*evaluation_data*
+*DIV2K_train_LR_unknown*
+*T91*

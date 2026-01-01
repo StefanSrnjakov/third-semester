@@ -1,0 +1,111 @@
+Iteracija,Korak,Vloga (kdo),Trajanje (h),Cakanje (h),Tip aktivnosti (VA/NVA),Napake (st),Trajanje_kategorija,Cakanje_intenziteta
+1,Priprava 3D modela implantata,Raziskovalec,0.83,0.0,VA,0,Srednje,Brez
+1,Pošiljanje modela v pregled,Raziskovalec,0.12,0.6,NVA,0,Kratko,Zmerno
+1,Čakanje na odobritev,Vodja laboratorija,2.09,2.2,NVA,1,Dolgo,Dolgo
+1,Priprava tiskalnika in materiala,Raziskovalec,0.38,0.0,VA,0,Kratko,Brez
+1,Čakanje na prost tiskalnik,Raziskovalec,1.52,0.0,NVA,0,Dolgo,Brez
+1,3D tisk,Raziskovalec / tiskalnik,2.12,0.0,VA,0,Dolgo,Brez
+1,Hlajenje modela,Avtomatski proces,3.0,0.0,NNVA,0,Dolgo,Brez
+1,Odstranjevanje podpornih struktur,Raziskovalec,0.21,0.6,VA,0,Kratko,Zmerno
+1,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.0,NNVA,0,Kratko,Brez
+1,Ponoven tisk (če napaka),Raziskovalec,1.17,1.3,NVA,0,Srednje,Dolgo
+1,Označevanje in vpis v dokumentacijo,Raziskovalec,0.15,1.3,NVA,1,Kratko,Dolgo
+2,Priprava 3D modela implantata,Raziskovalec,1.02,0.6,VA,0,Srednje,Zmerno
+2,Pošiljanje modela v pregled,Raziskovalec,0.66,0.6,NVA,0,Srednje,Zmerno
+2,Čakanje na odobritev,Vodja laboratorija,0.07,2.2,NVA,0,Kratko,Dolgo
+2,Priprava tiskalnika in materiala,Raziskovalec,0.31,0.0,VA,0,Kratko,Brez
+2,Čakanje na prost tiskalnik,Raziskovalec,-0.0,0.6,NVA,0,Kratko,Zmerno
+2,3D tisk,Raziskovalec / tiskalnik,2.0,0.5,VA,0,Dolgo,Zmerno
+2,Hlajenje modela,Avtomatski proces,0.0,3.0,NNVA,0,Kratko,Dolgo
+2,Odstranjevanje podpornih struktur,Raziskovalec,0.32,1.3,VA,0,Kratko,Dolgo
+2,Kontrola kakovosti,Kontrolor kakovosti,0.13,0.8,NNVA,0,Kratko,Zmerno
+2,Ponoven tisk (če napaka),Raziskovalec,0.07,0.6,NVA,0,Kratko,Zmerno
+2,Označevanje in vpis v dokumentacijo,Raziskovalec,0.01,1.3,NVA,0,Kratko,Dolgo
+3,Priprava 3D modela implantata,Raziskovalec,1.04,0.0,VA,0,Srednje,Brez
+3,Pošiljanje modela v pregled,Raziskovalec,1.12,0.6,NVA,0,Srednje,Zmerno
+3,Čakanje na odobritev,Vodja laboratorija,1.72,2.2,NVA,0,Dolgo,Dolgo
+3,Priprava tiskalnika in materiala,Raziskovalec,0.16,1.3,VA,0,Kratko,Dolgo
+3,Čakanje na prost tiskalnik,Raziskovalec,0.27,0.0,NVA,0,Kratko,Brez
+3,3D tisk,Raziskovalec / tiskalnik,2.54,0.5,VA,0,Dolgo,Zmerno
+3,Hlajenje modela,Avtomatski proces,0.06,0.57,NNVA,0,Kratko,Zmerno
+3,Odstranjevanje podpornih struktur,Raziskovalec,0.34,0.0,VA,0,Kratko,Brez
+3,Kontrola kakovosti,Kontrolor kakovosti,0.27,0.8,NNVA,0,Kratko,Zmerno
+3,Ponoven tisk (če napaka),Raziskovalec,0.14,0.6,NVA,0,Kratko,Zmerno
+3,Označevanje in vpis v dokumentacijo,Raziskovalec,-0.07,0.6,NVA,0,Kratko,Zmerno
+4,Priprava 3D modela implantata,Raziskovalec,0.93,1.3,VA,0,Srednje,Dolgo
+4,Pošiljanje modela v pregled,Raziskovalec,1.62,1.3,NVA,0,Dolgo,Dolgo
+4,Čakanje na odobritev,Vodja laboratorija,0.96,2.2,NVA,0,Srednje,Dolgo
+4,Priprava tiskalnika in materiala,Raziskovalec,0.34,0.6,VA,0,Kratko,Zmerno
+4,Čakanje na prost tiskalnik,Raziskovalec,2.33,0.6,NVA,0,Dolgo,Zmerno
+4,3D tisk,Raziskovalec / tiskalnik,0.5,0.5,VA,0,Srednje,Zmerno
+4,Hlajenje modela,Avtomatski proces,1.18,0.47,NNVA,0,Srednje,Zmerno
+4,Odstranjevanje podpornih struktur,Raziskovalec,0.15,0.6,VA,0,Kratko,Zmerno
+4,Kontrola kakovosti,Kontrolor kakovosti,3.5,0.0,NNVA,0,Dolgo,Brez
+4,Ponoven tisk (če napaka),Raziskovalec,1.48,1.3,NVA,0,Srednje,Dolgo
+4,Označevanje in vpis v dokumentacijo,Raziskovalec,0.09,1.3,NVA,0,Kratko,Dolgo
+5,Priprava 3D modela implantata,Raziskovalec,0.87,1.3,VA,0,Srednje,Dolgo
+5,Pošiljanje modela v pregled,Raziskovalec,0.17,1.3,NVA,0,Kratko,Dolgo
+5,Čakanje na odobritev,Vodja laboratorija,1.98,2.2,NVA,0,Dolgo,Dolgo
+5,Priprava tiskalnika in materiala,Raziskovalec,0.03,0.6,VA,0,Kratko,Zmerno
+5,Čakanje na prost tiskalnik,Raziskovalec,0.33,0.6,NVA,0,Kratko,Zmerno
+5,3D tisk,Raziskovalec / tiskalnik,1.51,0.5,VA,0,Dolgo,Zmerno
+5,Hlajenje modela,Avtomatski proces,0.12,0.6,NNVA,1,Kratko,Zmerno
+5,Odstranjevanje podpornih struktur,Raziskovalec,0.55,1.3,VA,0,Srednje,Dolgo
+5,Kontrola kakovosti,Kontrolor kakovosti,1.2,1.5,NNVA,0,Srednje,Dolgo
+5,Ponoven tisk (če napaka),Raziskovalec,2.09,0.6,NVA,0,Dolgo,Zmerno
+5,Označevanje in vpis v dokumentacijo,Raziskovalec,0.02,1.3,NVA,0,Kratko,Dolgo
+6,Priprava 3D modela implantata,Raziskovalec,0.83,0.6,VA,0,Srednje,Zmerno
+6,Pošiljanje modela v pregled,Raziskovalec,0.37,0.6,NVA,0,Kratko,Zmerno
+6,Čakanje na odobritev,Vodja laboratorija,0.14,0.9,NVA,0,Kratko,Zmerno
+6,Priprava tiskalnika in materiala,Raziskovalec,0.49,0.0,VA,0,Kratko,Brez
+6,Čakanje na prost tiskalnik,Raziskovalec,0.2,0.6,NVA,0,Kratko,Zmerno
+6,3D tisk,Raziskovalec / tiskalnik,0.15,0.5,VA,0,Kratko,Zmerno
+6,Hlajenje modela,Avtomatski proces,1.1,0.5,NNVA,0,Srednje,Zmerno
+6,Odstranjevanje podpornih struktur,Raziskovalec,0.23,0.6,VA,0,Kratko,Zmerno
+6,Kontrola kakovosti,Kontrolor kakovosti,0.25,0.0,NNVA,0,Kratko,Brez
+6,Ponoven tisk (če napaka),Raziskovalec,-0.07,1.3,NVA,0,Kratko,Dolgo
+6,Označevanje in vpis v dokumentacijo,Raziskovalec,0.14,0.0,NVA,0,Kratko,Brez
+7,Priprava 3D modela implantata,Raziskovalec,0.93,0.6,VA,0,Srednje,Zmerno
+7,Pošiljanje modela v pregled,Raziskovalec,1.93,0.6,NVA,0,Dolgo,Zmerno
+7,Čakanje na odobritev,Vodja laboratorija,0.57,0.0,NVA,0,Srednje,Brez
+7,Priprava tiskalnika in materiala,Raziskovalec,0.26,0.6,VA,0,Kratko,Zmerno
+7,Čakanje na prost tiskalnik,Raziskovalec,2.18,1.3,NVA,0,Dolgo,Dolgo
+7,3D tisk,Raziskovalec / tiskalnik,2.65,1.1,VA,0,Dolgo,Dolgo
+7,Hlajenje modela,Avtomatski proces,2.15,0.38,NNVA,0,Dolgo,Zmerno
+7,Odstranjevanje podpornih struktur,Raziskovalec,0.39,0.6,VA,0,Kratko,Zmerno
+7,Kontrola kakovosti,Kontrolor kakovosti,0.14,0.0,NNVA,0,Kratko,Brez
+7,Ponoven tisk (če napaka),Raziskovalec,1.81,1.3,NVA,0,Dolgo,Dolgo
+7,Označevanje in vpis v dokumentacijo,Raziskovalec,0.3,0.0,NVA,0,Kratko,Brez
+8,Priprava 3D modela implantata,Raziskovalec,0.59,0.6,VA,0,Srednje,Zmerno
+8,Pošiljanje modela v pregled,Raziskovalec,-0.02,0.6,NVA,0,Kratko,Zmerno
+8,Čakanje na odobritev,Vodja laboratorija,0.53,2.2,NVA,0,Srednje,Dolgo
+8,Priprava tiskalnika in materiala,Raziskovalec,0.25,1.3,VA,0,Kratko,Dolgo
+8,Čakanje na prost tiskalnik,Raziskovalec,0.2,1.3,NVA,0,Kratko,Dolgo
+8,3D tisk,Raziskovalec / tiskalnik,1.9,0.0,VA,0,Dolgo,Brez
+8,Hlajenje modela,Avtomatski proces,0.19,0.56,NNVA,0,Kratko,Zmerno
+8,Odstranjevanje podpornih struktur,Raziskovalec,0.46,0.6,VA,0,Kratko,Zmerno
+8,Kontrola kakovosti,Kontrolor kakovosti,0.08,1.5,NNVA,0,Kratko,Dolgo
+8,Ponoven tisk (če napaka),Raziskovalec,0.01,1.3,NVA,0,Kratko,Dolgo
+8,Označevanje in vpis v dokumentacijo,Raziskovalec,-0.02,0.6,NVA,0,Kratko,Zmerno
+9,Priprava 3D modela implantata,Raziskovalec,1.5,1.3,VA,0,Srednje,Dolgo
+9,Pošiljanje modela v pregled,Raziskovalec,0.21,1.3,NVA,0,Kratko,Dolgo
+9,Čakanje na odobritev,Vodja laboratorija,-0.03,2.2,NVA,0,Kratko,Dolgo
+9,Priprava tiskalnika in materiala,Raziskovalec,0.06,0.6,VA,0,Kratko,Zmerno
+9,Čakanje na prost tiskalnik,Raziskovalec,2.18,0.6,NVA,0,Dolgo,Zmerno
+9,3D tisk,Raziskovalec / tiskalnik,1.61,0.0,VA,0,Dolgo,Brez
+9,Hlajenje modela,Avtomatski proces,-0.08,0.45,NNVA,0,Kratko,Zmerno
+9,Odstranjevanje podpornih struktur,Raziskovalec,0.32,0.0,VA,0,Kratko,Brez
+9,Kontrola kakovosti,Kontrolor kakovosti,0.14,0.0,NNVA,0,Kratko,Brez
+9,Ponoven tisk (če napaka),Raziskovalec,1.96,0.0,NVA,0,Dolgo,Brez
+9,Označevanje in vpis v dokumentacijo,Raziskovalec,0.17,0.6,NVA,0,Kratko,Zmerno
+10,Priprava 3D modela implantata,Raziskovalec,0.65,0.6,VA,0,Srednje,Zmerno
+10,Pošiljanje modela v pregled,Raziskovalec,0.08,1.3,NVA,0,Kratko,Dolgo
+10,Čakanje na odobritev,Vodja laboratorija,1.28,0.9,NVA,0,Srednje,Zmerno
+10,Priprava tiskalnika in materiala,Raziskovalec,0.39,0.0,VA,0,Kratko,Brez
+10,Čakanje na prost tiskalnik,Raziskovalec,0.14,0.0,NVA,0,Kratko,Brez
+10,3D tisk,Raziskovalec / tiskalnik,2.94,0.5,VA,0,Dolgo,Zmerno
+10,Hlajenje modela,Avtomatski proces,0.03,0.47,NNVA,0,Kratko,Zmerno
+10,Odstranjevanje podpornih struktur,Raziskovalec,0.41,0.6,VA,0,Kratko,Zmerno
+10,Kontrola kakovosti,Kontrolor kakovosti,0.36,0.8,NNVA,0,Kratko,Zmerno
+10,Ponoven tisk (če napaka),Raziskovalec,-0.13,0.6,NVA,0,Kratko,Zmerno
+10,Označevanje in vpis v dokumentacijo,Raziskovalec,0.16,0.6,NVA,0,Kratko,Zmerno

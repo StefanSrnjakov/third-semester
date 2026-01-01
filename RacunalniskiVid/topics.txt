@@ -1,0 +1,49 @@
+1. Camera obscura in projekcije
+
+    Nastanek slike
+
+    Camera obscura
+
+    Leče in projekcijske transformacije
+
+    Perspektivna, ortografska, afina projekcija
+
+2. Kalibracija kamer
+
+    Model kamere
+
+    Parametri kamere
+
+    Homogene koordinate
+
+3. Epipolarna geometrija
+
+    Dva pogleda
+
+    Epipolarne premice
+
+    Temeljna matrika
+
+    Izravnava (rectification)
+
+4. Poravnava slik
+
+    Poravnava z nadzornimi točkami
+
+    Toga poravnava (premik + zasuk)
+
+    Afina poravnava
+
+    Afina poravnava s spremembami intenzivnosti
+
+    Netoga / elastična poravnava
+
+5. Poravnava s frekvenčnim prostorom
+
+    Amplitudni in fazni spekter
+
+    Zasuk z amplitudnim spektrom
+
+    Premik z faznim spektrom
+
+    Poravnava z 2D FFT

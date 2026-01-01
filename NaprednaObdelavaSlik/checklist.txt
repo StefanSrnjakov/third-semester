@@ -1,0 +1,47 @@
+Napredna obdelava slik – CHECKLIST (skrajšana)
+
+SPLOŠNO - Študijski cilji in rezultati - Načini ocenjevanja - Glavne
+vsebine (CNN, zajemanje slik, predobdelava, segmentacija) - Literatura
+
+1.  KONVOLUCIJSKE NEVRONSKE MREŽE
+
+-   Osnove nevronskih mrež
+    -   Umetni nevron, aktivacijske funkcije
+    -   Forward/backpropagation
+    -   Izgube, optimizatorji
+    -   Overfitting/underfitting, regularizacija
+-   Konvolucijske nevronske mreže (CNN)
+    -   Konvolucija, pooling, aktivacije
+    -   Stride, padding, filtri
+    -   Arhitekture (LeNet, AlexNet, VGG, ResNet, DenseNet)
+-   Inženirski pristop h globokim NN
+    -   Metrike (loss, accuracy, precision, recall)
+    -   Predobdelava podatkov
+    -   Inicializacija, batch norm, dropout
+    -   Izbor hiperparametrov
+    -   Spremljanje učenja, vizualizacije
+-   Aplikacije CNN
+    -   Segmentacija
+    -   Razvrščanje
+    -   Detekcija
+    -   Image retrieval
+
+2.  NAPREDNI KONCEPTI ZAJEMANJA SLIK
+    -   CCD kamere
+    -   Hiperspektralne slike in analiza
+    -   Spektralni podpisi, endmemberji, unmixing
+    -   Polarizirano zajemanje in aplikacije
+    -   Interferometrija in uporabe
+3.  NAPREDNA PREDOBDELAVA SLIK
+    -   Aditivni in multiplikativni šum
+    -   Pegasti šum (speckle)
+    -   Filtri (Lee, Kuan, Frost, wavelet, NN)
+    -   Metrike (MSE, RMSE, PSNR, SNR, ENL)
+    -   Barvna vztrajnost
+    -   Retinex, Gray World, CCN, LSAC, RSR
+    -   Barvni kalibratorji
+4.  NAPREDNA SEGMENTACIJA
+    -   Aktivne konture (snakes)
+    -   Energijski model (interna, slikovna, zunanja energija)
+    -   Numerične metode, parametri, razširjene kače (GVF itd.)
+    -   ICA za segmentacijo

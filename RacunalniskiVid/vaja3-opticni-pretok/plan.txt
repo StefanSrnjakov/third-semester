@@ -1,0 +1,15 @@
+1. kak vizualiziram .flo file
+2. Kak sem razdelil med ucna in validacijska mnozica
+3. Kaj se dogaja z validacijsko mnozico
+4. kaj je input in kaj je output mreze
+5. kaj je razlika med U shape in mojo mrezno
+6. kako se izracuna EPE
+7. parametri Farneback
+    - pyr_scale
+    - levels
+    - winsize
+    - iterations
+    - poly_n
+    - poly_sigma
+    - flags
+8. Zakaj imam center crop? 

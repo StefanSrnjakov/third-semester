@@ -1,0 +1,21 @@
+1. kako a namaluvas rezulucijata
+    - A kratam sliko za scale 2 ili 3 random 
+    - A vrakjam u prethodna golemina so bilinear interpolation
+2. So rgb so e ycbcr
+3. kako a pretvaras
+4. kako i kade a razdeluvas za testiranje? 
+5. Kako a vrakjas nazad v rgb i kade
+
+
+6. Objasni a nevronskata mreza
+7. Stevilo slik, poveprecna sirina, povprecna visina slik, kade pise 
+8. Kje nastavis faktor locljivosti
+9. Kaj je bilinear interpolation
+10. Loss funkcija
+11. Batch size
+12. Drugi parametri
+
+13. Prikaz delovanja
+14. Testiranje z PSNR in SSIM
+15. Kaj je PSNR
+16. Kaj je SSIM

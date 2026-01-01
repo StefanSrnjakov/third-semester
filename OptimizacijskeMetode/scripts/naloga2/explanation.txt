@@ -1,0 +1,38 @@
+
+
+Resitev: 
+Tocke za maksimalno ploscino:
+   -3.6398   -2.7686
+    3.6845   -2.7290
+    4.9540    5.2997
+   -0.0004    9.0000
+   -5.9554    5.2954
+
+Maksimalna ploscina:
+   93.5633
+
+Tocke za minimalno ploscino:
+   -2.3056   -1.2804
+    2.2519   -1.3364
+    3.0346    4.7393
+    0.0011    7.0000
+   -4.0367    4.7316
+
+Minimalna ploscina:
+   43.1346
+
+
+Kratek opis: 
+Za iskanje maksimalne in minimalne ploscine petkotnika sem uporabil MATLAB funkcijo
+fmincon(fun, x0, A, b, Aeq, beq, lb, ub, nonlcon).
+Pri meni:
+
+fun = @(u) -ploscina_petkotnika(u) za maksimum in fun = @ploscina_petkotnika za minimum
+
+x0 je nakljucni zacetni vektor koordinat [x1 y1 ... x5 y5]
+
+A, b, Aeq, beq so prazni ([]), ker nimam linearnih omejitev
+
+lb, ub sta vektorja spodnjih in zgornjih mej za koordinate
+
+nonlcon = @omejitve_petkotnik opisuje nelinearne omejitve, da vsaka tocka lezi znotraj ali na svoji krožnici.

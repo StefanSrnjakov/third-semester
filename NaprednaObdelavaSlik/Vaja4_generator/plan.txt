@@ -1,0 +1,4 @@
+1. Objasni treniranje
+2. Objasni arhitektura na modelot
+3. Kako embedas u generator
+4. Kako embedas u discriminator
