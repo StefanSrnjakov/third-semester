@@ -1,0 +1,14 @@
+
+Vsebina•Pridobivanje podatkov•Izračun indeksov•Shranjevanje rezultatov•Poročilo
+Pridobivanje podatkov•Sentinel2•https://dataspace.copernicus.eu•Na vrhu izberete „COPERNICUS BROWSER“•Prosto dostopni•Potrebna registracija
+Pridobivanje podatkov
+Pridobivanje podatkov
+Pridobivanje podatkov
+Izračun indeksov•Posamezen posnetek•13 pasov (angl. band)•Podmapa GRANULE/X/IMG_DATA•Različne ločljivosti!
+Izračun indeksov
+Izračun indeksov -primeri
+Shranjevanje rezultatov•Format .tif•Poljuben sampleformat•Poročilo•Indeksi, ki ste jih spoznali na predavanjih•5 poljubnih indeksov
+Zaključek•Vrednost naloge•4% -izračunani indeksi s predavanj•3% -izračunanih 5 poljubnih indeksov•1% -shranjevanje v tifformatu•2% -poročilo•Ni ustnega zagovora
+
+
+

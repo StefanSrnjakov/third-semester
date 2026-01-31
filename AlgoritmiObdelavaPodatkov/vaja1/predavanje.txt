@@ -1,0 +1,29 @@
+| Band name | Resolution [m] | Central wavelength [nm] | Band width [nm] |
+| --------: | -------------: | ----------------------: | --------------: |
+|         1 |             60 |                   443.9 |              27 |
+|         2 |             10 |                   496.6 |              98 |
+|         3 |             10 |                   560.0 |              45 |
+|         4 |             10 |                   664.5 |              38 |
+|         5 |             20 |                   703.9 |              19 |
+|         6 |             20 |                   740.2 |              18 |
+|         7 |             20 |                   782.5 |              28 |
+|         8 |             10 |                   835.1 |             145 |
+|        8a |             20 |                   864.8 |              33 |
+|         9 |             60 |                   945.0 |              26 |
+|        10 |             60 |                  1373.5 |              75 |
+|        11 |             20 |                  1613.7 |             143 |
+|        12 |             20 |                  2202.4 |             242 |
+
+
+
+
+
+| Name                                                     | Definition                                                       |
+| -------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Enhanced Vegetation Index (EVI)**                      | ( \displaystyle \frac{s[8] - s[4]}{s[8] + 6s[4] - 7.5s[2] + 1} ) |
+| **Normalised Difference Vegetation Index (NDVI)**        | ( \displaystyle \frac{s[8] - s[4]}{s[8] + s[4]} )                |
+| **Green Normalised Difference Vegetation Index (GNDVI)** | ( \displaystyle \frac{s[8] - s[3]}{s[8] + s[3]} )                |
+| **Moisture Stress Index (MSI)**                          | ( \displaystyle \frac{s[11]}{s[8]} )                             |
+| **Normalised Difference Water Index (NDWI)**             | ( \displaystyle \frac{s[3] - s[11]}{s[3] + s[11]} )              |
+| **Normalised Difference Built-up Index (NDBI)**          | ( \displaystyle \frac{s[11] - s[8]}{s[11] + s[8]} )              |
+| **Normalised Difference Mud Index (NDMI)**               | ( \displaystyle \frac{s[9] - s[8]}{s[9] + s[8]} )                |

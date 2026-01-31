@@ -1,0 +1,17 @@
+V poljubnem programskem jeziku izdelajte aplikacijo, ki bo omogočala izračun prostorskih indeksov multispektralnih slik (Sentinel 2), ki ste jih spoznali na predavanjih. Poleg tega izračunajte še 5 indeksov po lastni izbiri.
+
+ 
+
+Multispektralne posnetke dobite na naslednjem naslovu. Za dostop do podatkov se morate registrirati. Pasovi se nahajajo v podmapi GRANULE/X/IMG_DATA, kjer X predstavlja časovni trenutek in lokacijo, ki ste jo izbrali. Pasovi so zapisani v stisnjenem tipu .jp2, rezultat (izračunan indeks) pa shranite v formatu .tif. Za branje formata .jp2 si lahko pomagate s kodo iz naslednje spletne strani.
+
+ 
+
+Na sistem oddajte tudi poročilo. Poročilo naj vsebuje slike vseh izračunanih indeksov.
+
+ 
+
+Ustni zagovor vaje: ne (naloga bo ocenjena do konca semestra ali 1 teden pred vsakim izpitnim rokom)
+
+Vrednost naloge: 10% ocene (izračun indeksov s predavanj (4%) in indeksov po lastni izbiri (3%), 1% shranjevanje v tif formatu, 2% poročilo)
+
+Oddaja: Oddajte zip arhiv vašega projekta (npr. VisualStudio). Pred oddajo zbrišite direktorije obj, bin, ipch, Release in Debug ter datoteke .ncb in .sdf.
