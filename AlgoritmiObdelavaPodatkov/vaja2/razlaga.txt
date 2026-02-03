@@ -1,0 +1,32 @@
+V poljubnem programskem jeziku izdelajte aplikacijo, kjer boste implementirali morfološko odpiranje in zapiranje ter odpiranje in zapiranje z rekonstrukcijo.
+
+ 
+
+Najprej implementirajte osnovni morfološki operaciji krčenje in širjenje:
+
+krčenje: na vhodni sliki na pikslu s koordinatama x in y s kvadratnim filtrom velikosti S poiščite minimalno vrednost in jo zapišite v izhodno sliko na koordinati x in y.
+širjenje: na vhodni sliki na pikslu s koordinatama x in y s kvadratnim filtrom velikosti S poiščite maksimalno vrednost in jo zapišite v izhodno sliko na koordinati x in y.
+   
+
+Zatem implementirajte morfološko odpiranje in zapiranje velikosti S:
+
+odpiranje: nad vhodno sliko najprej izvedete krčenje in nad dobljeno sliko še širjenje.
+zapiranje: nad vhodno sliko najprej izvedete širjenje in nad dobljeno sliko še krčenje.
+ 
+
+Na koncu implementirajte še odpiranje in zapiranje z rekonstrukcijo velikosti S:
+
+odpiranje z rekonstrukcijo: nad vhodno sliko najprej uporabite "klasično" krčenje s poljubnim S > 1, da dobite t.i. označevalno sliko. Nad to sliko izvedete širjenje z rekonstrukcijo (S = 1) tako, da dobljeno maksimalno vrednost na koordinatah x in y primerjate z vrednostjo istoležnega piksla na originalni vhodni sliki in v izhodno sliko na koordinati x in y zapišete manjšo od obeh vrednosti. Postopek ponavljate vse dokler se izhodna slika v dveh zaporednih iteracijah ne spremeni.
+zapiranje z rekonstrukcijo: nad vhodno sliko najprej uporabite "klasično" širjenje s poljubnim S > 1, da dobite t.i. označevalno sliko. Nad to sliko izvedete krčenje z rekonstrukcijo (S = 1) tako, da dobljeno minimalno vrednost na koordinatah x in y primerjate z vrednostjo istoležnega piksla na originalni vhodni sliki in v izhodno sliko na koordinati x in y zapišete večjo od obeh vrednosti. Postopek ponavljate vse dokler se izhodna slika v dveh zaporednih iteracijah ne spremeni.
+ 
+
+Na sistem oddajte tudi poročilo. Za vhodne slike uporabite multispektralne indekse iz prve vaje. Poročilo naj vsebuje vsaj tri različna področja in pri vsakem področju vsaj en multispektralni indeks. Vsako področje naj v poročilu vsebuje vhodno sliko in slike dobljene po odpiranju, zapiranju, odpiranju z rekonstrukcijo in zapiranju z rekonstrukcijo. Pri odpiranju in zapiranju z rekonstrukcijo dodajte še čas izvajanja in število iteracij, potrebnih za dosego končnega rezultata.
+
+ 
+
+BONUS (2%): uporabite še dva filtra poljubne oblike (v osnovi smo uporabili kvadratno obliko) in dodajte stran v poročilu, kjer primerjate čase in število iteracij med vsemi tremi različnimi oblikami filtrov pri odpiranju in zapiranju z rekonstrukcijo nad istimi slikami.
+
+ 
+
+POMEMBNO: za morfološke operacije ne smete uporabljati knjižnic! Uporaba pomeni, da bo naloga ocenjena z 0 točk.
+

@@ -1,0 +1,43 @@
+1. del
+
+V poljubnem programskem jeziku izdelajte aplikacijo, ki bo omogočila nalaganje slike in postopek, ki omogoča zaznavo robov (morfološki gradient), odstranjevanje majhnih robov in algoritem razvodja (ang. watershad). 
+
+ 
+
+Primer original slike:
+
+ 
+
+Primer slike po zaznavi robov (in prikaz razdrobljenosti - manjših regij):
+
+ 
+
+Primer slike po odstranjevanju majhnih robov in uporabi algoritma razvodja:
+
+
+
+ 
+
+2. del
+
+V poljubnem programskem jeziku izdelajte aplikacijo, ki bo omogočila nalaganje slike, označevanje objektov in razpoznavanje le-teh z algoritmom nadzora z označevalci (ang. marker-controlled watershad). Algoritem in primer ste spoznali na predavanjih.
+
+ 
+
+Primer naložene slike in označevanje enega objekta:
+
+
+
+Primer rezultata za en objekt:
+
+
+
+  
+
+Na sistem poleg aplikacije oddajte tudi poročilo. Za vhodne slike uporabite primere (primer1, primer2 in primer3), ki so priloženi. Poročilo naj vsebuje vsa tri različna področja in pri vsakem področju vsaj tri primere z različnim številom objektov (npr. 3, 5 in 10 objektov, vendar najmanj 2).
+
+ 
+
+POMEMBNO: za algoritem razvodja (angl. watershed) ne smete uporabljati knjižnic! Uporaba pomeni, da bo naloga ocenjena z 0 točk.
+
+ 

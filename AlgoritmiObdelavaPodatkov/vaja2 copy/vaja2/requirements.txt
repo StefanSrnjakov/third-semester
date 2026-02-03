@@ -1,0 +1,7 @@
+numpy
+matplotlib
+Pillow
+glymur
+pandas
+jupyter
+

@@ -1,0 +1,14 @@
+
+12
+
+Automatic Zoom
+Krčenje•Minimalna vrednost v okolici slikovne pike na koordinati x in y•Okolica = velikost filtra
+Krčenje
+Širjenje•Maksimalna vrednost v okolici slikovne pike na koordinati x in y•Okolica = velikost filtra
+Širjenje
+Odpiranje•Vhodna slika + krčenje(S) = izhodna slika 1•Izhodna slika 1 + širjenje(S) = izhodna slika 2•Rezultat: izhodna slika 2
+Zapiranje•Vhodna slika + širjenje(S) = izhodna slika 1•Izhodna slika 1 + krčenje(S) = izhodna slika 2•Rezultat: izhodna slika 2
+Odpiranje z rekonstrukcijo1. Vhodna slika + krčenje(poljuben S > 1) = označevalna slika2. označevalna slika + max (x, y, S = 1) = vrednost3. izhodna vrednost = min(vhodna slika(x, y), vrednost)4. izhodna slika(x, y) = izhodna vrednost5. označevalna slika = izhodna slika6. ponavljamo korake 2 - 5 dokler dve zaporedni izhodni sliki nista enaki
+Zapiranje z rekonstrukcijo1. Vhodna slika + širjenje(poljuben S > 1) = označevalna slika2. označevalna slika + min(x, y, S = 1) = vrednost3. izhodna vrednost = max(vhodna slika(x, y), vrednost)4. izhodna slika(x, y) = izhodna vrednost5. označevalna slika = izhodna slika6. ponavljamo korake 2 - 5 dokler dve zaporedni izhodni sliki nista enaki
+Poročilo•Slike iz prve vaje•Sivinske•3 različne lokacije na zemljevidu•Vsaj 1 multispektralniindeks•Vhodna slika•Sliki po odpiranju in zapiranju•Sliki po odpiranju z rekonstrukcijo in zapiranju z rekonstrukcijo•Čas izvajanja in število iteracij
+Zaključek•Vrednost naloge•2% - odpiranje in zapiranje•6% - odpiranje in zapiranje z rekonstrukcijo•2% -poročilo•BONUS 2%: uporaba še dveh filtrov poljubne oblike•V poročilo dodajte stran, kjer primerjate čase in število iteracij za vse tri različne filtre pri odpiranju in zapiranju z rekonstrukcijo nad istimi slikami•Ni ustnega zagovora

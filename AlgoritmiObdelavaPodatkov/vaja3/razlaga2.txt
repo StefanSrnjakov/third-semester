@@ -1,0 +1,14 @@
+
+10
+
+Automatic Zoom
+Algoritemrazvodja
+Vsebina•Algoritemrazvodja•Morfološkigradient•Odstranjevanjemajhnihrobov•Nadzorz označevalci•Poročilo
+Algoritemrazvodja•Princip simulacijepoplav•Poljubnesivinskeslike•Morfološkigradient•Širjenje–krčenje
+Princip simulacijepoplav•Vhod je pred obdelana sivinska slika•Zanka(V od 0 do 255)•Za vsepiksleP v sliki, kiimajovrednostV, preveri•čeP nimanobenegasosedaz žedoločenoregijo, mu določitenovo regijo•čeimaP enegasoseda, mu določitesosedovoregijo•čeimaP dvaalivečrazličnihsosedov(različneregije), mu določiteregijopoljubnegasoseda•Pobarvajteposamezneregije-> izhodje segmentiranaslika•Zelopočasenpristop–optimizacija!
+Princip simulacijepoplav•Optimizacija•Knjiga•Morphological image analysis principles and applications•PriloženanaeŠtudiju•Psevdokodhitreimplementacije•Stranv pdf-juje 287, stranv knjigipa 276•BONUS 5%
+Algoritemrazvodja•Velikarazdrobljenost•Odstranitemanjšerobove•Uporabniškonastavljivparameter
+Nadzorz označevalci•Uporabnikdoločiregije
+Poročilo•Uporabitevsatri območja•Priloženanasistemu za vaje•1. del•Za vsakopodročjeizveditecelotenpostopekpri treh različnih vrednostih parametra za odstranjevanje robov•2. del•Za vsakopodročjeenprimer•Vsak primer najvsebujevsaj2 objekta
+Poročilo•Oddaja na sistem•Izvornakoda•Poročilo•1.del –9 zaslonskih posnetkov (3 območja x 3 različne vrednosti parametra)•2.del–3zaslonske posnetke(3 območja) •BONUS•9 zaslonskih posnetkov (3 območja x 3 različne vrednosti parametra) s hitro verzijo algoritma
+Zaključek•Vrednost naloge•7% -1. del (zaznavanjein odstranjevanjerobov, algoritemrazvodja)•4% -2. del (nadzorz označevalci)•4% -poročilo•5% BONUS –implementacija hitre verzije algoritma•3% -implementacija•2% -poročilo •Ustnizagovor: ne
