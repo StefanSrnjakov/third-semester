@@ -1,0 +1,48 @@
+Naloga 1: Rast populacije
+
+
+V prvi nalogi boste morali narediti nadzorovano rast bitij. Pred začetkom razlage si dajmo ogledati primer kako bi lahko izgledal minimalni standard (ang. Minimum viable product v nadaljnem MVP) aplikacije (slika 1). MVP vam omogoča pridobiti maksimalno 50%.
+
+Slika 1 MVP
+
+Začnimo z razlago na podlagi slike 1. Na levi strani okna (slika 1) vidimo prikaz bitij kot modri krogi, ki se naključno gibljejo po (omejenem) prostoru (lahko se premikajo en čez drugega). Želja teh bitij je razmnoževanje v času, ki jim je na voljo pred smrtjo. Bitja se pri tem razmnožujejo samostojno (ne potrebujejo partnerja). Na nasprotni strani okna pa je prikaz grafa števila živih bitij skozi čas ali ciklov. Graf je potrebno ročno narediti. To pomeni, da ni dovoljeno uporabljati knjižic, ki vam samostojno kreirajo graf. Pri grafu ni pomemben izgled/dinamičnost in prav tako lahko omejite število časa/ciklov do katerega bo aplikacija delovala in izrisovala graf. Graf je seveda potrebno opremiti z razdelitvijo x in y osi, da se lahko iz njega odčitavajo vrednosti. Razdelitve osi ni prikazano na sliki 1, saj ni potrebno za MVP (50% ocene). Na dnu aplikacije je predstavljen uporabniški vmesnik. Vmesnik v  tem primeru vsebuje (od leve proti desni) izpis trenutne populacije (če je razvidno iz grafa tu ni potrebno), st začetno število bitij ob zagonu simulacije, R predstavlja verjetnost razmnoževanja, S verjetnost smrti, K pa koeficient (več o teh vrednostih kasneje), na koncu pa gumb za zagon naše simulacije (v tem primeru gumb vsakič požene simulacijo od začetka). Za polno oceno je potrebno imeti vsaj tri različne tipe bitij (lahko predstavljena z različnimi barvami), ki imajo vsaka svoje parametre (st, R, S, K). Na grafu se morajo hkrati izrisovati podatki za vsak tip bitij. 
+
+Vse elemente, ki so predstavljeni na sliki 1 lahko poljubno izdelate. Na mestu krogov uporabite slike, različne elemente, 3D objekte itd. Vizualnost ne bo vplivalo negativno na oceno, lahko pa vam dodatno vložen trud prisluži dodatne točke pri tej nalogi. Prav tako je namenjena naloga zato, da se seznanite z okoljem v katerem boste izdelovali nadaljnje naloge.
+
+
+
+Slika  enaka verjetnost za spremenljivki R in S
+
+Sedaj pa si še poglejmo kako izgleda življenje naših bitij. Bitja živijo medsebojno neodvisno en od drugega in v osnovi samo preverjajo kdaj se bodo lahko razmnožila ali umrla. Za njihovo razmnoževanje in življenjsko obdobje jim določimo procentualno možnost (R in S). Seveda želimo, da naša bitja preživijo in se množijo. Tako moramo izbrati primerne vrednosti, saj kot lahko vidimo na sliki 2 se pri enaki verjetnosti S in R naša bitja ostajajo na približno enakem nivoju. Iz tega lahko sklepamo, da moramo podati večjo vrjetnost za razmnoževanje, saj če je smrtnost večja od razmnoževanja bitja izumrejo (slika 3).
+
+Slika  večja verjetnost smrti
+
+
+V primeru kjer podamo večjo verjetnost razmnoževanju vidimo nato drug problem. Naša bitja se začnejo eksponentno razmnoževat (slika 4).
+
+Slika  večja verjetnost razmnoževanja
+
+
+Torej kako lahko predstavimo in rešimo problem. Če si pogledamo spremembo naše populacije v obliki enačbe jo lahko zapišemo kot:
+
+∆ =
+(
+R-S
+)
+*
+N
+
+Ta enačba je napoved kako se bo spreminjalo število razmnoževanja glede na število bitij (označeno z N). Ne glede na to kako spremenimo spreminjamo vrednosti R in S bomo dobili linearno spremembo rasti bitij (kot vidno iz slike 4 in 3). Zato moramo enačko razširiti in pogoj smrti nadgraditi, da se spreminja glede na količino bitij. Za ta namen uvedemo koeficent, ki v povezavi s številom bitij zagotovlja omejitev števila bitij.
+
+∆ =
+(
+R-S-K*N
+)
+*N
+
+
+
+Slika 5 Končen rezultat - hitra rast na začetku in nato nihanje v določenem območju
+
+Go to
+Page

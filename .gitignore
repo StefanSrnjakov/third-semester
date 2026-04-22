@@ -108,3 +108,19 @@ inference_outputs/
 *evaluation_data*
 *DIV2K_train_LR_unknown*
 *T91*
+# Specific heavy data folders
+AlgoritmiObdelavaPodatkov/vaje/vaja1/data/
+AlgoritmiObdelavaPodatkov/vaje/vaja1/results/
+AlgoritmiObdelavaPodatkov/vaje/vaja2/data/
+RacunalniskiVid/vaja1-homografija/checkpoints/
+RacunalniskiVid/vaja1-homografija/checkpoints_google/
+
+# Specific heavy files
+RacunalniskiVid/vaja4-detekcija-predmetov/data (1).zip
+VitkoUpravljanje/seminarska_VUI/air_bnb.csv
+AlgoritmiObdelavaPodatkov/vaje/vaja3/Soille - 2013.pdf
+# Specific heavy data folders found in scan
+AlgoritmiObdelavaPodatkov/vaje/vaja2/data/
+AlgoritmiObdelavaPodatkov/vaje/vaja3/data/
+VitkoUpravljanje/seminarska_VUI/air_bnb.csv
+RacunalniskiVid/vaja4-detekcija-predmetov/data/

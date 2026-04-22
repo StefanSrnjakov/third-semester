@@ -1,0 +1,38 @@
+V tej vaji boste morali izdelali preprosto simulacijo življenja, ki bo vsebovala plenilca, plen in hrano za plen (npr. lisica, zajec, detelja). Seveda bo potrebno izdelati teren na katerem se bodo lahko gibali in imeli možnost oziroma dostop do vira pitne vode. Za vajo boste imeli dva tedna časa. Bodite pozorni, saj se bo ta vaja uporabljala v nadaljnjih vajah. V tej fazi naj bo narejen MVP (minimum viable product). 
+
+Razdelitev naloge po procentih:
+
+Do 60%
+
+Teren sestavljen iz vode in kopnega
+voda je neprehodna površina, kjer lahko bitja pijejo
+kopno je prehodna površina, kjer iščejo hrano
+Štirje različni tereni – naj bo postavitev, oblika in razpršenost vode različna (reka, jezero, več jezer)
+Plenilec in plen s sledečimi lastnostmi
+Lakota, žeja, razmnoževanje – te predstavljajo »kakovost« življenja in so med seboj povezane v določeno prioritetno vrsto. Najpomembnejšo za bitje je razmnoževanje in zato bo ob veliki želji za razmnoževanje prenehalo iskati vodo in hrano temveč bo iskalo samo drugo bitje. Naslednja je žeja, saj lahko brez hrane dlje preživi kot brez vode. Tako bitje umre ko mu zmanjka vode oziroma postane preveč žejno. V primeru ko bitju zmanjka hrane pa se poveča potreba po vodi.
+Starost – se bo uporabilo za dva namena. Prvi namen je za omejitev kako dolgo lahko bitje živi ( koliko ciklov ali časa ). Drugi pa za to da vidimo kako dolgo je uspelo bitje preživet našo simulacijo. Lahko bi rekli kako »dobro« je bilo njegovo življenje.
+Zaznava – območje v katerem bitje zaznava svojo okolico
+Spol – je uporabljeno pri razmnoževanju bitij (potrebna sta dva različna spola za razmnoževanje).
+Hitrost in velikost – hitrost pove kako hitro se lahko bitje giblje, velikost kot že ime pove predstavlja velikost bitja. Obe lastnosti vplivata na porabo virov bitja. Večja hitrost predstavlja večjo žejo, večje telo pa večjo potrebo po hrani. Velikost pa se uporabi tudi pri izbiri partnerja za razmnoževanje (ko je več potencialnih kandidatov). V našem primeru bo večje je boljše.
+Variacija/odstopanje – odstopanje od začetnih vrednosti (npr. +-10%).
+Do 10%
+
+Generiranje terena s pomočjo Perlinovega šuma. Uporabite lahko knjižnico bodo pa vprašanja v povezavi z delovanjem Perlinovega šuma.
+Razdelitev terena na 6 »višinskih pasov« (voda, pesek, trava, gozd, gora, vrh gore)
+oda 40%, trava 35%, gozd 15%, pesek 2,5%, vrh gore 2,5%, gora 5%
+teren je lahko predstavljen 2D (različna barva za vsak tip terena) ali 3D. Izbira je prepuščena vsakemu posamezniku odvisno od njegovih znanj in sposobnosti (ne vpliva na oceno)
+Do 10%
+
+Lov in beg
+
+Plenilec išče najprimernejši plen (bližji, počasnejši, večji) v odvisnosti od potreb.
+Plen beži pred plenilci. izbrati pot kjer zazna najmanj plenilcev. Pri begu ne sme bežati pred enim plenilcem do drugega plenilca.
+Do 5%
+
+Dedovanje in mutacija
+
+Potomec naključno deduje lastnosti staršev. Dedovana lastnost predstavlja osnovno vrednost bitja na katerega še vedno vpliva variacija. Na primer oba starša sta večja od povprečja, zato bo potomec prav tako večji od povprečja. Vendar bo zaradi vpliva variacije lahko še večji od staršev ali malo manjši.
+Vsako bitje ima pri svojem rojstvu možnost mutacije posamezne lastnosti. To predstavlja nenadno spremembo lastnosti. (npr. 10% verjetnost, da bo se vrednost lastnosti spremenila za +-20%)
+Do 15%
+
+Izdelava uporabniškega vmesnika , ki omogoča nastavljanje začetnih parametrov simulacije, kot so uporabljen teren (1 od štirih ali vrednosti generatorja terena), osnovne lastnosti bitij, mutacije itn. ter o premikanje po terenu, ko je teren večji od polja prikaza.

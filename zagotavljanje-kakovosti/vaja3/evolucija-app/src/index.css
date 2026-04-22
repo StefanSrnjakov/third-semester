@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white;
+  color: black;
+}
+
+h1, h3 {
+  margin-top: 0;
+}
+
+input, select, button {
+  margin-bottom: 5px;
+}
+
+.creature-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.creature-list-table th, .creature-list-table td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+}
